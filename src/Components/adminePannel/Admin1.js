@@ -72,13 +72,15 @@ const Admin1 = () => {
             </div>
           </li>
           <li>
-            <a href="index-2.html" title="Home" data-toggle="tooltip">
+            <Link to={"/"}>
+            <a href="/" title="Home" data-toggle="tooltip">
               <i>
                 <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-home">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   <polyline points="9 22 9 12 15 12 15 22" />
                 </svg></i>
             </a>
+            </Link>
           </li>
           <li>
             <a className="mesg-notif" href="#" title="Messages" data-toggle="tooltip">
@@ -167,7 +169,7 @@ const Admin1 = () => {
       <ul className="menu-slide">
         <li className="active">
           <Link to={"/home"}>
-          <a className href="" title>
+          <a className href="home" title>
             <i><svg id="icon-home" className="feather feather-home" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none" viewBox="0 0 24 24" height={14} width={14} xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
@@ -176,8 +178,8 @@ const Admin1 = () => {
           </Link>
         </li>
         <li className>
-            <Link to={"#analitic"}>
-          <a className href="#" title>
+            <Link to={"/analytics"}>
+          <a className href="analytics" title>
             <i className><svg id="ab7" className="feather feather-zap" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none" viewBox="0 0 24 24" height={14} width={14} xmlns="http://www.w3.org/2000/svg">
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
               </svg></i>Analytics
@@ -198,8 +200,8 @@ const Admin1 = () => {
           </Link>
         </li>
         <li className>
-            <Link to={"/reviews"}>
-          <a className href="/reviews" title>
+       <Link to={"/reviews"}>
+          <a className href="reviews" title>
             <i className>
               <svg id="ab3" xmlns="http://www.w3.org/2000/svg" width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-star">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
@@ -247,8 +249,8 @@ const Admin1 = () => {
           </Link>
         </li>
         <li className>
-            <Link to={"/#"}>
-          <a className href="# messages-inbox.html" title>
+            <Link to={"/messageinbox"}>
+          <a className href="messageinbox" title>
             <i className>
               <svg id="ab2" xmlns="http://www.w3.org/2000/svg" width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-message-square">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -257,7 +259,7 @@ const Admin1 = () => {
           </Link>
         </li>
         <li className>
-            <Link to={"/team"}>
+          <Link to={"/team"}>
           <a className href="team" title>
             <i className>
               <svg id="team" xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-smile">
@@ -270,7 +272,7 @@ const Admin1 = () => {
           </Link>
         </li>
         <li className>
-            <Link to={"/login"}>
+ <Link to={"/login"}>
           <a className href="login" title>
             <i className>
               <svg id="ab9" xmlns="http://www.w3.org/2000/svg" width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-lock">
@@ -281,12 +283,14 @@ const Admin1 = () => {
           </Link>
         </li>
         <li className="menu-item-has-children">
+          <Link to={"#"}>
           <a className href="#" title>
             <i><svg id="ab8" className="feather feather-file" strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" fill="none" viewBox="0 0 24 24" height={14} width={14} xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
                 <polyline points="13 2 13 9 20 9" />
               </svg></i>Pages
           </a>
+          </Link>
           <ul className="submenu">
             <li><a href="404.html" title>Error 404</a></li>
             <li><a href="forgot-password.html" title>Forgot Password</a></li>

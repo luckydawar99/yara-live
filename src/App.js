@@ -16,6 +16,7 @@ import Admin1 from "./Components/adminePannel/Admin1";
 import Reviews from "./Components/page/Reviews";
 import Events from "./Components/page/Events";
 import Team from "./Components/page/Team";
+import Analytics1 from "./Components/Analytics1";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
     <Route path="/messages" element={<Messages/>}></Route>
     <Route path="/notifications" element={<Notifications/>}></Route>
     <Route path="/profiles" element={<Profiles/>}></Route>
+    <Route path="/analytic" element={<Analytics1/>} ></Route>
    
     <Route path="/products" element={<Products/>}></Route>
     <Route path="/priceplane" element={<Priceplane/>}></Route>

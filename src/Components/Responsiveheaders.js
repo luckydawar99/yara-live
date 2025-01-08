@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const Responsiveheaders = () => {
   return (
@@ -6,7 +7,9 @@ const Responsiveheaders = () => {
 <div className="responsive-header">
   <div className="res-logo"><img src="images/logo.png" alt /></div>
   <div className="user-avatar mobile">
-    <a href="profile.html" title="View Profile"><img alt src="images/resources/user.jpg" /></a>
+    <Link to={"/profiles"}>
+    <a href="profiles" title="View Profile"><img alt src="images/resources/user.jpg" /></a>
+    </Link>
     <div className="name">
       <h4>Saim Turan</h4>
       <span>Antalaya, Turky</span>
@@ -26,7 +29,9 @@ const Responsiveheaders = () => {
       </div>
       <ul className="drop-menu">
         <li>
-          <a title="profile.html" href="profile.html"><i className="icofont-user-alt-1" />Your Profile</a>
+          <Link to={"/profiles"}>
+          <a title="profiles" href="profile.html"><i className="icofont-user-alt-1" />Your Profile</a>
+          </Link>
         </li>
         <li>
           <a title href="#"><i className="icofont-question-circle" />Help</a>
@@ -38,7 +43,9 @@ const Responsiveheaders = () => {
           <a className="dark-mod" title href="#"><i className="icofont-moon" />Dark Mode</a>
         </li>
         <li>
+          <Link to={"/login"}>
           <a title href="login-register.html" className="logout"><i className="icofont-logout" />Logout</a>
+          </Link>
         </li>
       </ul>
     </div>

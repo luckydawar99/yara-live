@@ -3,6 +3,7 @@ import React from 'react'
 const Adminpanel = () => {
   return (
 <>
+<div className="theme-layout">
 <div className="container-fluid">
   <div className="row">
     <div className="col-lg-12">
@@ -715,7 +716,7 @@ const Adminpanel = () => {
     </div>
   </div>
 </div>
-
+</div>
 </>
   )
 }

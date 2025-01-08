@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const Header = () => {
   return (
@@ -26,12 +27,14 @@ const Header = () => {
         </div>
       </li>
       <li>
-        <a href="index-2.html" title="Home" data-toggle="tooltip">
+        <Link to={"/"}>
+        <a href="/" title="Home" data-toggle="tooltip">
           <i>
             <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-home">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               <polyline points="9 22 9 12 15 12 15 22" /></svg></i>
         </a>
+        </Link>
       </li>
       <li>
         <a className="mesg-notif" href="#" title="Messages" data-toggle="tooltip">
@@ -71,34 +74,52 @@ const Header = () => {
         </a>
         <ul className="dropdown">
           <li>
-            <a href="profile.html" title><i className="icofont-user-alt-3" /> Your Profile</a>
+            <Link to={"/profiles"}>
+            <a href="profiles" title><i className="icofont-user-alt-3" /> Your Profile</a>
+            </Link>
           </li>
           <li>
-            <a href="add-new-course.html" title><i className="icofont-plus" /> New Course</a>
+            <Link to={"/addnewcource"}>
+            <a href="addnewcource" title><i className="icofont-plus" /> New Course</a>
+            </Link>
           </li>
           <li>
+            <Link to={"#"}>
             <a className="invite-new" href="#" title><i className="icofont-brand-slideshare" /> Invite Collegue</a>
+            </Link>
           </li>
           <li>
-            <a href="pay-out.html" title><i className="icofont-price" /> Payout</a>
+            <Link to={"/payoutcall"}>
+            <a href="payoutcall" title><i className="icofont-price" /> Payout</a>
+            </Link> 
+            </li>
+          <li>
+            <Link to={"/priceplane"}>
+            <a href="priceplane" title><i className="icofont-flash" /> Upgrade</a>
+            </Link>
           </li>
           <li>
-            <a href="price-plan.html" title><i className="icofont-flash" /> Upgrade</a>
+            <Link to={"/helpfaq"}>
+            <a href="helpfaq" title><i className="icofont-question-circle" /> Help</a>
+            </Link>
           </li>
           <li>
-            <a href="help-faq.html" title><i className="icofont-question-circle" /> Help</a>
+            <Link to={"/settings"}>
+            <a href="settings" title><i className="icofont-gear" /> Setting</a>
+            </Link>
           </li>
           <li>
-            <a href="settings.html" title><i className="icofont-gear" /> Setting</a>
-          </li>
-          <li>
-            <a href="privacy-n-policy.html" title><i className="icofont-notepad" /> Privacy</a>
+            <Link to={"/privecypolicy"}>
+            <a href="privecypolicy" title><i className="icofont-notepad" /> Privacy</a>
+            </Link>
           </li>
           <li>
             <a className="dark-mod" title href="#"><i className="icofont-moon" /> Dark Mode</a>
           </li>
           <li className="logout">
-            <a href="sign-in.html" title><i className="icofont-power" /> Logout</a>
+            <Link to={"/signin"}>
+            <a href="signin" title><i className="icofont-power" /> Logout</a>
+            </Link>
           </li>
         </ul>
       </li>

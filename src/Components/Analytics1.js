@@ -1,5 +1,5 @@
 import React from "react";
-import ReactApexChart from "react-apexcharts"; // Import for ApexCharts
+import ReactApexChart from "react-apexcharts"; 
 import Chart from "react-apexcharts";
 
 const Analytics1 = () => {

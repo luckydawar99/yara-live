@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router'
 const Profiles = () => {
   return (
 <>
@@ -130,7 +130,8 @@ const Profiles = () => {
                   </div>
                 </li>
                 <li>
-                  <a href="index-2.html" title="Home" data-toggle="tooltip">
+                  <Link to={"/"}>
+                  <a href="/" title="Home" data-toggle="tooltip">
                     <i>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -148,6 +149,7 @@ const Profiles = () => {
                       </svg>
                     </i>
                   </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -350,7 +352,8 @@ const Profiles = () => {
           <nav className="sidebar">
             <ul className="menu-slide">
               <li className>
-                <a className href="index-2.html" title>
+                <Link to={"/"}>
+                <a className href="/" title>
                   <i>
                     <svg
                       id="icon-home"
@@ -370,9 +373,11 @@ const Profiles = () => {
                   </i>{" "}
                   Dashboard
                 </a>
+                </Link>
               </li>
               <li className>
-                <a className href="analytics.html" title>
+                <Link to={"#"}>
+                <a className href="#" title>
                   <i className>
                     <svg
                       id="ab7"
@@ -391,9 +396,11 @@ const Profiles = () => {
                   </i>
                   Analytics
                 </a>
+                </Link>
               </li>
               <li className="active">
-                <a className href="profile.html" title>
+                <Link to={"/profiles"}>
+                <a className href="profiles" title>
                   <i>
                     <svg
                       id="ab1"
@@ -415,9 +422,11 @@ const Profiles = () => {
                   </i>
                   Profile
                 </a>
+                </Link>
               </li>
               <li className>
-                <a className href="reviews.html" title>
+                <Link to={"/reviews"}>
+                <a className href="reviews" title>
                   <i className>
                     <svg
                       id="ab3"
@@ -436,9 +445,11 @@ const Profiles = () => {
                   </i>
                   Reviews
                 </a>
+                </Link>
               </li>
               <li className>
-                <a className href="events.html" title>
+                <Link to={"/events"}>
+                <a className href="events" title>
                   <i className>
                     <svg
                       id="ab4"
@@ -458,9 +469,11 @@ const Profiles = () => {
                   </i>
                   Events
                 </a>
+                </Link>
               </li>
               <li className>
-                <a className href="products.html" title>
+                <Link to={"/products"}>
+                <a className href="products" title>
                   <i className>
                     <svg
                       id="ab5"
@@ -481,9 +494,11 @@ const Profiles = () => {
                   </i>
                   Products
                 </a>
+                </Link>
               </li>
               <li className>
-                <a className href="blog.html" title>
+                <Link to={"/blog"}>
+                <a className href="blog" title>
                   <i className>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -505,9 +520,11 @@ const Profiles = () => {
                   </i>
                   Blogs
                 </a>
+                </Link>
               </li>
               <li className>
-                <a className href="messages-inbox.html" title>
+                <Link to={"/messageinbox"}>
+                <a className href="messageinbox" title>
                   <i className>
                     <svg
                       id="ab2"
@@ -526,9 +543,11 @@ const Profiles = () => {
                   </i>
                   Messages
                 </a>
+                </Link>
               </li>
               <li className>
-                <a className href="team.html" title>
+                <Link to={"/team"}>
+                <a className href="team" title>
                   <i className>
                     <svg
                       id="team"
@@ -550,9 +569,11 @@ const Profiles = () => {
                   </i>
                   Team
                 </a>
+                </Link>
               </li>
               <li className>
-                <a className href="login-register.html" title>
+                <Link to={"/login"}>
+                <a className href="login" title>
                   <i className>
                     <svg
                       id="ab9"
@@ -572,6 +593,7 @@ const Profiles = () => {
                   </i>
                   Login/Register
                 </a>
+                </Link>
               </li>
               <li className="menu-item-has-children">
                 <a className href="#" title>
